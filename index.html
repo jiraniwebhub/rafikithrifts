@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RAFIKI THRIFTS - Clothing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="shop-container">
+
+    <header class="nav-header">
+      <nav class="navbar">
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#clothes">Clothes</a></li>
+          <li class="brand">RAFIKI THRIFTS</li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about" class="hero-section">
+      <div class="hero-content">
+        <h1>RAFIKI THRIFTS</h1>
+        <p>Find stylish and affordable clothes for ladies at unbeatable prices.</p>
+        <p>We do delivery countrywide at a very affordable price.</p>
+      </div>
+    </section>
+
+    <!-- CLOTHING SECTION -->
+    <section id="clothes" class="clothes-section">
+      <h2>Our Clothing Collection</h2>
+      <div class="clothing-grid">
+
+        <!-- Initial Cards -->
+        <div class="clothing-card">
+          <img src="images/shirt1.jpg" alt="Men's Shirt" onclick="openModal(this.src)">
+          <p>Bras</p>
+          <span class="price">Ksh 250</span>
+        </div>
+
+        <div class="clothing-card">
+          <img src="images/clothes7.jpg" alt="Men's Shirt" onclick="openModal(this.src)">
+          <p>Trausers</p>
+          <span class="price">Ksh 500</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/IMG-20250702-WA0041.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
+          <p>Trausers</p>
+          <span class="price">Ksh 500</span>
+        </div>
+
+        <div class="clothing-card">
+          <img src="images/top1.jpg" alt="Ladies Top" onclick="openModal(this.src)">
+          <p>Ladies' Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+
+        <div class="clothing-card">
+          <img src="images/IMG-20250702-WA0042.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
+          <p>Trausers</p>
+          <span class="price">Ksh 500</span>
+        </div>
+
+        <div class="clothing-card">
+          <img src="images/baby1.jpg" alt="Baby Outfit" onclick="openModal(this.src)">
+          <p> Ladies Jeans</p>
+          <span class="price">Ksh 500</span>
+        </div>
+
+        <!-- Dresses -->
+        <div class="clothing-card">
+          <img src="images/dress2.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
+          <p>Bras</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/dress4.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/dress5.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/dress6.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/dress7.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/dress8.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/dress9.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
+          <p>tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/dress10.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/dress11.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/dress12.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
+          <p>tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+
+        <!-- Tops -->
+        <div class="clothing-card">
+          <img src="images/top2.jpg" alt="Ladies Top" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/top3.jpg" alt="Ladies Top" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/top4.jpg" alt="Ladies Top" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/top6.jpg" alt="Ladies Top" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/top7.jpg" alt="Ladies Top" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/top8.jpg" alt="Ladies Top" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/top9.jpg" alt="Ladies Top" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/top10.jpg" alt="Ladies Top" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/top11.jpg" alt="Ladies Top" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/top12.jpg" alt="Ladies Top" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+
+        <!-- Trousers -->
+        <div class="clothing-card">
+          <img src="images/trouser1.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/trouser2.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
+          <p>Trousers</p>
+          <span class="price">Ksh 500</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/trouser3.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/trouse4.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/trouser5.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
+          <p>Trausers</p>
+          <span class="price">Ksh 500</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/trouser6.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/trouser7.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/trouser8.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/trouser9.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/trouser10.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/trouser11.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+        <div class="clothing-card">
+          <img src="images/trouser12.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
+          <p>Tops</p>
+          <span class="price">Ksh 250</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="order" class="order-section">
+      <h2>Place Your Clothing Order</h2>
+      <form onsubmit="addOrder(event)">
+        <div class="input-container">
+          <input type="text" id="orderInput" placeholder="Enter clothing item..." class="input-field" required />
+          <button type="submit" class="add-button">Add</button>
+        </div>
+      </form>
+      <div class="list-wrapper">
+        <ol id="orderList"></ol>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3>Contact Us</h3>
+      <a href="mailto:kelvinkmwangi07@gmail.com" class="contact-button">Email: kelvinkmwangi07@gmail.com</a><br />
+      <a id="whatsappLink" target="_blank" rel="noreferrer" class="order-button">WhatsApp Order</a>
+    </section>
+
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImg" alt="Full Image View">
+    </div>
+
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+
+    const orders = [];
+
+    function addOrder(e) {
+      e.preventDefault();
+      const input = document.getElementById('orderInput');
+      const value = input.value.trim();
+      if (value) {
+        orders.push(value);
+        const list = document.getElementById('orderList');
+        const li = document.createElement('li');
+        li.textContent = value;
+        li.className = 'list-item';
+        list.appendChild(li);
+        input.value = '';
+        updateWhatsAppLink();
+      }
+    }
+
+    function updateWhatsAppLink() {
+      const base = "https://wa.me/254799757915?text=";
+      let message = "Hi there, I'd like to order the following from RAFIKI THRIFTS:%0A";
+      for (let i = 0; i < orders.length; i++) {
+        message += (i + 1) + ". " + encodeURIComponent(orders[i]) + "%0A";
+      }
+      document.getElementById("whatsappLink").href = base + message;
+    }
+
+    function openModal(src) {
+      document.getElementById("modalImg").src = src;
+      document.getElementById("imageModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+</body>
+</html>
