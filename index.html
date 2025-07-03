@@ -8,7 +8,20 @@
 </head>
 <body>
   <div class="shop-container">
-
+    <!-- 🌙 Dark Mode Toggle Button -->
+    <style>
+      .theme-toggle {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+        z-index: 1000;
+      }
+    </style>
+  <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
     <header class="nav-header">
       <nav class="navbar">
         <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
@@ -23,7 +36,10 @@
     </header>
 
     <section id="about" class="hero-section">
+
       <div class="hero-content">
+       
+  
         <h1>RAFIKI THRIFTS</h1>
         <p>Find stylish and affordable clothes for ladies at unbeatable prices.</p>
         <p>We do delivery countrywide at a very affordable price.</p>
@@ -35,40 +51,47 @@
       <h2>Our Clothing Collection</h2>
       <div class="clothing-grid">
 
+ 
         <!-- Initial Cards -->
         <div class="clothing-card">
           <img src="images/shirt1.jpg" alt="Men's Shirt" onclick="openModal(this.src)">
           <p>Bras</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
 
         <div class="clothing-card">
           <img src="images/clothes7.jpg" alt="Men's Shirt" onclick="openModal(this.src)">
           <p>Trausers</p>
           <span class="price">Ksh 500</span>
+          <button class="order-button" onclick="addToCart('trausers',500)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/IMG-20250702-WA0041.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
           <p>Trausers</p>
           <span class="price">Ksh 500</span>
+          <button class="order-button" onclick="addToCart('trausers',500)">Add to Cart</button>
         </div>
 
         <div class="clothing-card">
           <img src="images/top1.jpg" alt="Ladies Top" onclick="openModal(this.src)">
           <p>Ladies' Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
 
         <div class="clothing-card">
           <img src="images/IMG-20250702-WA0042.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
           <p>Trausers</p>
           <span class="price">Ksh 500</span>
+          <button class="order-button" onclick="addToCart('trausers',500)">Add to Cart</button>
         </div>
 
         <div class="clothing-card">
           <img src="images/baby1.jpg" alt="Baby Outfit" onclick="openModal(this.src)">
           <p> Ladies Jeans</p>
           <span class="price">Ksh 500</span>
+          <button class="order-button" onclick="addToCart('trausers',500)">Add to Cart</button>
         </div>
 
         <!-- Dresses -->
@@ -76,51 +99,61 @@
           <img src="images/dress2.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
           <p>Bras</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/dress4.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/dress5.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/dress6.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/dress7.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/dress8.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/dress9.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
           <p>tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/dress10.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/dress11.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/dress12.jpg" alt="Ladies Dress" onclick="openModal(this.src)">
           <p>tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
 
         <!-- Tops -->
@@ -128,51 +161,61 @@
           <img src="images/top2.jpg" alt="Ladies Top" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/top3.jpg" alt="Ladies Top" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/top4.jpg" alt="Ladies Top" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/top6.jpg" alt="Ladies Top" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/top7.jpg" alt="Ladies Top" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/top8.jpg" alt="Ladies Top" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/top9.jpg" alt="Ladies Top" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/top10.jpg" alt="Ladies Top" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/top11.jpg" alt="Ladies Top" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/top12.jpg" alt="Ladies Top" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
 
         <!-- Trousers -->
@@ -180,132 +223,196 @@
           <img src="images/trouser1.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/trouser2.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
           <p>Trousers</p>
           <span class="price">Ksh 500</span>
+          <button class="order-button" onclick="addToCart('trausers',500)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/trouser3.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/trouse4.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/trouser5.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
           <p>Trausers</p>
           <span class="price">Ksh 500</span>
+          <button class="order-button" onclick="addToCart('trausers',500)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/trouser6.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/trouser7.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/trouser8.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/trouser9.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/trouser10.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/trouser11.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button>
         </div>
         <div class="clothing-card">
           <img src="images/trouser12.jpg" alt="Ladies Trouser" onclick="openModal(this.src)">
           <p>Tops</p>
           <span class="price">Ksh 250</span>
+          <button class="order-button" onclick="addToCart('tops',250)">Add to Cart</button> 
         </div>
 
-      </div>
+    </div> <!-- end of clothing-grid -->
+  </section> <!-- end of clothes-section -->
+
+    <!-- 🛒 Cart Section -->
+    <section id="cart" class="cart-section">
+      <h2>Your Cart</h2>
+      <ul id="cart-list" class="cart-list"></ul>
+      <p id="total-price" class="cart-total">Total: Ksh 0</p>
     </section>
 
-    <section id="order" class="order-section">
-      <h2>Place Your Clothing Order</h2>
-      <form onsubmit="addOrder(event)">
-        <div class="input-container">
-          <input type="text" id="orderInput" placeholder="Enter clothing item..." class="input-field" required />
-          <button type="submit" class="add-button">Add</button>
-        </div>
-      </form>
-      <div class="list-wrapper">
-        <ol id="orderList"></ol>
-      </div>
-    </section>
-
+    <!-- 📞 Contact Section -->
     <section id="contact">
       <h3>Contact Us</h3>
       <a href="mailto:kelvinkmwangi07@gmail.com" class="contact-button">Email: kelvinkmwangi07@gmail.com</a><br />
       <a id="whatsappLink" target="_blank" rel="noreferrer" class="order-button">WhatsApp Order</a>
     </section>
 
+    <!-- 🖼 Modal Image Viewer -->
     <div id="imageModal" class="modal">
       <span class="close" onclick="closeModal()">&times;</span>
       <img class="modal-content" id="modalImg" alt="Full Image View">
     </div>
 
-  </div>
+  </div> <!-- end of shop-container -->
 
+  <!-- ✅ Functional Script -->
+  
   <script>
-    function toggleMenu() {
-      document.getElementById('navLinks').classList.toggle('active');
-    }
+  let cart = [];
 
-    const orders = [];
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('active');
+  }
 
-    function addOrder(e) {
-      e.preventDefault();
-      const input = document.getElementById('orderInput');
-      const value = input.value.trim();
-      if (value) {
-        orders.push(value);
-        const list = document.getElementById('orderList');
+  function addToCart(item, price) {
+    cart.push({ item, price });
+    updateCartList();
+    updateTotalPrice();
+    updateWhatsAppLink();
+  }
+
+  function updateCartList() {
+    const cartList = document.getElementById('cart-list');
+    if (cartList) {
+      cartList.innerHTML = '';
+      cart.forEach((item, index) => {
         const li = document.createElement('li');
-        li.textContent = value;
-        li.className = 'list-item';
-        list.appendChild(li);
-        input.value = '';
-        updateWhatsAppLink();
-      }
+        li.textContent = `${index + 1}. ${item.item} - Ksh ${item.price}`;
+        cartList.appendChild(li);
+      });
     }
+  }
 
-    function updateWhatsAppLink() {
-      const base = "https://wa.me/254799757915?text=";
-      let message = "Hi there, I'd like to order the following from RAFIKI THRIFTS:%0A";
-      for (let i = 0; i < orders.length; i++) {
-        message += (i + 1) + ". " + encodeURIComponent(orders[i]) + "%0A";
-      }
-      document.getElementById("whatsappLink").href = base + message;
+  function updateTotalPrice() {
+    const total = cart.reduce((sum, item) => sum + item.price, 0);
+    const totalPriceElement = document.getElementById('total-price');
+    if (totalPriceElement) {
+      totalPriceElement.textContent = `Total: Ksh ${total}`;
     }
+  }
 
-    function openModal(src) {
-      document.getElementById("modalImg").src = src;
-      document.getElementById("imageModal").style.display = "block";
-    }
+  function updateWhatsAppLink() {
+    const base = "https://wa.me/254799757915?text=";
+    let message = "Hi there, I'd like to order the following from RAFIKI THRIFTS:%0A";
+    cart.forEach((item, index) => {
+      message += `${index + 1}. ${encodeURIComponent(item.item)} - Ksh ${item.price}%0A`;
+    });
+    const total = cart.reduce((sum, item) => sum + item.price, 0);
+    message += `%0A${encodeURIComponent("Total: Ksh " + total)}`;
+    document.getElementById("whatsappLink").href = base + message;
+  }
 
-    function closeModal() {
-      document.getElementById("imageModal").style.display = "none";
+  function openModal(src) {
+    document.getElementById("modalImg").src = src;
+    document.getElementById("imageModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle('dark-theme');
+    const btn = document.getElementById('theme-toggle');
+    if (document.body.classList.contains('dark-theme')) {
+      btn.textContent = '☀ Light Mode';
+    } else {
+      btn.textContent = '🌙 Dark Mode';
     }
-  </script>
-</body>
-</html>
+  }
+</script>
+<style>
+  body.dark-theme {
+    background-color: #181818;
+    color: #f1f1f1;
+  }
+  body.dark-theme .shop-container {
+    background-color: #222;
+    color: #f1f1f1;
+  }
+  body.dark-theme .clothing-card {
+    background-color: #292929;
+    color: #f1f1f1;
+  }
+  body.dark-theme .theme-toggle {
+    background-color: #333;
+    color: #fff;
+  }
+  body.dark-theme .order-button,
+  body.dark-theme .contact-button {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  body.dark-theme .navbar,
+  body.dark-theme .nav-links {
+    background-color: #222;
+    color: #f1f1f1;
+  }
+  body.dark-theme .modal-content {
+    background-color: #222;
+  }
+</style>
